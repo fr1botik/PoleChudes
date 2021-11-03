@@ -91,13 +91,12 @@ public class options extends AppCompatActivity {
 
         }
         else if(set.equals("1")){
-            intent = new Intent(this,MainActivity.class);
+            intent = new Intent(this,first.class);
             intent.putExtra("baraban",set1);
             startActivity(intent);
-            Toast.makeText(this,"Ты боба не то взял",Toast.LENGTH_SHORT).show();
         }
         else if(set.equals("2")){
-            intent = new Intent(this,MainActivity.class);
+            intent = new Intent(this,first.class);
             intent.putExtra("baraban",set1);
             startActivity(intent);
 
