@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PoleChudes</string>
+    <array name="ease">
+        <item>Как звать Олега?</item>
+        <item>Сколько я уже нахожусь здесь(циферка)</item>
+        <item>Сколько весит 1 тонна ртути?</item>
+    </array>
+    <array name="ans_easy">
+        <item>Олег</item>
+        <item>7</item>
+        <item>Тонна</item>
+    </array>
+</resources>
