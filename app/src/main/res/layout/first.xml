@@ -10,11 +10,11 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="292dp"
+        android:background="@drawable/ag"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
@@ -66,22 +66,22 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="44dp"
+        android:background="@drawable/am"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/player2"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="176dp"
+        android:background="@drawable/al"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/baraban"
@@ -102,9 +102,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="408dp"
         android:ems="10"
+        android:hint="Введите ответ"
         android:imeOptions="actionDone"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"

@@ -17,7 +17,6 @@ public class options extends AppCompatActivity {
 
     String [] difficult = {"Легкая","Средняя","Сложная"};
     String [] baraban = {"Первый барабан","Второй барабан","Третий барабан"};
-    TextView text;
     TextView textView,textView1;
 
 
@@ -31,7 +30,7 @@ public class options extends AppCompatActivity {
 
         textView = findViewById(R.id.test);
         textView1 = findViewById(R.id.test2);
-        text = findViewById(R.id.text);
+
 
 
         Spinner spinner = findViewById(R.id.spinner2);
@@ -73,6 +72,7 @@ public class options extends AppCompatActivity {
         };
 
         spinner1.setOnItemSelectedListener(itemSelectedListener1);
+
         /*textView.setText(setting1 + " " + setting2 );*/
 
     }
@@ -83,7 +83,6 @@ public class options extends AppCompatActivity {
 
         String set = textView.getText().toString();
         String set1 = textView1.getText().toString();
-        text.setText(set + set1);
         if (set.equals("0"))
         {
             intent = new Intent(this,first.class);

@@ -25,9 +25,10 @@ public class first extends AppCompatActivity {
     Animation anim;
     String answer1;
     ImageView player1,player2,player3;
-    int n;
+    int n,turn;
     String[]answr;
     String[]questions;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,6 +43,7 @@ public class first extends AppCompatActivity {
         player1 = findViewById(R.id.player1);
         player2 = findViewById(R.id.player2);
         player3 = findViewById(R.id.player3);
+
 
         answr= getResources().getStringArray(R.array.ans_easy);
         questions= getResources().getStringArray(R.array.ease);
@@ -75,64 +77,29 @@ public class first extends AppCompatActivity {
             baraban.startAnimation(anim);
 
     }
-
-    public void answer(View view) {
-        int turn = 0;
-        int nAnswer = n;
-        while(turn<3) {
-            switch (turn){
-                case 0:
-
-                    if (otvet.getText().toString().equals(answr[nAnswer])){
-
-                        Toast.makeText(getApplicationContext(),"УГАДАЛ БИБА", Toast.LENGTH_SHORT).show();
-                        QuestionEasy();
-                    }
-                    else{
-                        Toast.makeText(getApplicationContext(),"БОБА ТОБОЙ НЕ ДОВОЛЕ", Toast.LENGTH_SHORT).show();
-                        turn = turn +1;
-                    }
-
-                    break;
-                case 1:
-                    if (otvet.getText().toString().equals(answr[nAnswer])){
-
-                        Toast.makeText(getApplicationContext(),"УГАДАЛ БИБА", Toast.LENGTH_SHORT).show();
-                        QuestionEasy();
-                    }
-                    else{
-                        Toast.makeText(getApplicationContext(),"БОБА ТОБОЙ НЕ ДОВОЛЕ", Toast.LENGTH_SHORT).show();
-                        turn = turn +1;
-                    }
-
-                    break;
-                case 2:
-                    if (otvet.getText().toString().equals(answr[nAnswer])){
-
-                        Toast.makeText(getApplicationContext(),"УГАДАЛ БИБА", Toast.LENGTH_SHORT).show();
-                        QuestionEasy();
-                    }
-                    else{
-                        Toast.makeText(getApplicationContext(),"БОБА ТОБОЙ НЕ ДОВОЛЕ", Toast.LENGTH_SHORT).show();
-                        turn = 0;
-                    }
-
-                    break;
-                default:
-                    Toast.makeText(getApplicationContext(),"НИЧЕГО НЕ ХОЧЕТ РАБОТАТЬ", Toast.LENGTH_SHORT).show();
-
-            }
-
-
-
-        }
-    }
     public void QuestionEasy (){
 
         Random random = new Random();
         n = random.nextInt(3);
         quest.setText(questions[n]);
     }
+    public void answer(View view) {
+        String[] answer_ease = getResources().getStringArray(R.array.ans_easy);
+
+        if (otvet.getText().toString().equals(answer_ease[n])) {
+
+            Toast.makeText(getApplicationContext(), "УГАДАЛ БИБА", Toast.LENGTH_SHORT).show();
+            baraban.clearAnimation();
+            QuestionEasy();
+        }
+        else {
+            Toast.makeText(getApplicationContext(), "БОБА ТОБОЙ НЕ ДОВОЛЕН", Toast.LENGTH_SHORT).show();
+            baraban.clearAnimation();
+            turn = 0;
+        }
+
+    }
 
 }
+
 

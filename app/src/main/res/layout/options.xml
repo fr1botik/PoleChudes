@@ -70,6 +70,7 @@
         android:layout_height="43dp"
         android:layout_marginBottom="216dp"
         android:text="TextView"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
@@ -91,24 +92,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/text"
-        android:layout_width="312dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="156dp"
-        android:fontFamily="@font/font1"
-        android:text="TextView"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/test2"
         android:layout_width="122dp"
         android:layout_height="43dp"
         android:layout_marginBottom="216dp"
         android:text="TextView"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.799"
